@@ -1,0 +1,423 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style> 
+    .video-info-grid{
+        border: 1px solid red;
+        display: grid;
+        width: 300px;
+    }
+    .KAP{
+    width: 300px;
+    }
+    .window{
+             /* width: 300px;  */
+            margin-top: 15px;
+             border: 2px soild black; 
+            /* display: inline-block; */
+            cursor: pointer;
+    }
+    .god{
+            width: 36px;
+            border-radius:50%;
+            margin-top: 15px;
+            
+    }
+    .videoinfo{
+        display: grid;
+        grid-template-columns: 50px 1fr;
+        
+    }
+    .dp{
+        vertical-align: top;
+    }
+    .p1{
+         width: 250px; 
+    }
+    .vgrid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 20px;
+        row-gap: 10px;
+        margin-left: 72px;
+        background-color: rgb(245, 243, 243);
+        padding-top: 57px;
+        padding-left: 72px;
+    }
+    .p1{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+     /* width: 300px;  */
+    margin-left:0px; 
+    margin-right: 0px; 
+    /* margin-right:20px;  */
+}
+.p2{
+    font-family: Roboto, Arial, sans-serif;
+    /* font-weight: bold; */
+    color: grey;
+    /* width: 300px; */
+    /* margin-left:20px; */
+    font-size: 14px;
+    margin-bottom:0px ;
+}
+
+.p3{
+    font-family: Roboto, Arial, sans-serif;
+    /* font-weight: bold; */
+    color: grey;
+    /* width: 300px; */
+    /* margin-left: 20px; */
+    font-size: 14px;
+    margin-top: 0px;
+}
+.fff{
+    text-decoration: none;
+}
+.header{
+    display: flexbox;
+}
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 720px; */
+    height: 57px;
+    border-bottom: 1px solid #dedede;
+    margin-bottom: 20px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    bottom: 40px;
+}
+.dfd{
+    width: 100px;
+    height: 20px;
+    padding: 10px;
+    vertical-align: middle;
+    margin-left: 30px;
+}
+.bvb{
+    height: 40px;
+    width: 350px;
+    vertical-align: middle;
+    border: 1px solid #faebeb;
+
+}
+.nnn{
+    height: 40px;
+}
+.bvb:active{
+    border: 1px solid #faebeb;
+}
+.hamburger-menu{height: 24px;
+    margin-left: 24px;
+    margin-right: 24px;
+    cursor: pointer;
+}
+.yyy{
+     width: 250px;
+     height: 45px;
+     border: 1px solid grey;
+     padding: 12px;
+
+}
+
+
+.yyy:click{
+    border-color: #dedede;
+}
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 56px;
+    bottom: 0;
+    background-color: white;
+    width: 72px;
+    padding-top: 5px;
+    z-index: 200;
+}
+.sidebar-link{
+    display: flex;
+    font-size: 10px;
+    height: 74px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.sarat{
+    
+    height: 30px;
+}
+.right-section{
+    display: flex;
+    align-items: center;
+    width: 182px;
+    justify-content: space-between;
+    margin-right: 24px;
+    margin-left: 29px;
+    flex-shrink: 0;
+}
+.icon{
+    cursor: pointer;
+    height: 24px
+}
+.tooltip-container{
+    font-size: 14px;
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+.tooltip{background-color: rgba(96, 96, 96, 0.9);
+    color: white;
+    font-size: 12px;
+    padding: 8px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: -50px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+.my-channel{
+    height: 35px;
+    cursor: pointer;
+}
+.notification-count{
+    /* position: absolute; 
+    right: 5px;
+    font-weight: 200;
+    background-color: black;
+    color:white;
+    border-radius: 50%;*/
+
+    background-color: #cc0000;
+    border-radius: 80px;
+    position: absolute;
+    top: -3px;
+    right: -7px;
+    color: white;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    padding: 0 5px;
+    pointer-events: none;
+}
+.midsection{
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 470px;
+    margin-left: 60px;
+}
+.yyy{
+    height: 40px;
+    flex: 1;
+    width: 0;
+    min-width: 0;
+    padding-left: 12px;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    border: 1px solid #cccccc;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: inset 0px 1px 2px #eeeeee
+}
+    </style>
+</head>
+<body>
+    <!-- <div style="background-color: black; width: 40px;"> <p>rtb</p> -->
+    <!-- <p>yyhy</p> -->
+    <!-- <p>tg</p> -->
+<!-- </div> -->
+<div class="header">
+    <div class="leftsection" style="justify-content: center;">
+        <img class="hamburger-menu" src="hamburger-menu.svg" >
+        <img src="youtube-logo.svg" width="90px" height="20px" >
+
+         
+        
+   </div>
+   <div class="midsection">
+       <input  class="yyy" type="text" placeholder="search">
+       <button class ="nnn"><img class="hamburger-menu" src="voice-search-icon (1).svg" width="20px" height="20px"> </button>
+   </div>
+   <div class="lastsection">
+    <div class="right-section">
+        <div class="tooltip-container"> <img class="icon" src="upload.svg">
+        <div class="tooltip">Create</div></div>
+
+        <div class="tooltip-container"><img class="icon" src="youtube-apps.svg">
+        <div class="tooltip">YouTube apps</div></div>
+       
+        <div class="tooltip-container"><img class="icon" src="notifications.svg">
+         <div class="notification-count">3</div><div class="tooltip">Notifications</div></div>
+        
+         <div><img class="my-channel" src="my-channel.jpeg"></div>
+   </div>
+</div>
+    
+</div>
+</header>
+<nav class="sidebar">
+    <div class="sidebar-link"><img class ="sarat" src="home.svg"><div>Home</div></div>
+    <div class="sidebar-link"><img class ="sarat" src="ex1.svg"><div>Explore</div></div>
+    <div class="sidebar-link"><img class ="sarat" src="sub1.svg"><div>Subscriptions</div></div>
+    <div class="sidebar-link"><img class ="sarat" src="originals.svg"><div>Originals</div></div>
+    <div class="sidebar-link"><img class ="sarat"src="youtube-music.svg"><div>YouTube Music</div></div>
+    <div class="sidebar-link"><img class ="sarat"src="library.svg"><div>Library</div></div></nav>
+  
+<div class="vgrid">
+     
+    <div class="window">
+    <div class="pic1">
+                <img class="KAP" src ="th1.webp"> </div>
+                
+        <div class="videoinfo">
+                    <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+                    <div class="einfo"> 
+                        <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+                        <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                        <p class ="p2">Marques Brownlee</p>
+                        <p class="p3">3.1M views &#183 4 months ago</p> 
+                       </a></div>
+                    
+                </div>
+
+</div>
+<div class="window">
+    <div class="pic1">
+      <img class="KAP" src ="th1.webp"> </div>
+      
+      <div class="videoinfo">
+          <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+          <div class="einfo"> 
+              <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+              <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+              <p class ="p2">Marques Brownlee</p>
+              <p class="p3">3.1M views &#183 4 months ago</p> 
+             </a></div>
+          
+      </div>
+
+    </div>
+
+      <div class="window">
+        <div class="pic1">
+          <img class="KAP" src ="th1.webp"> </div>
+          
+          <div class="videoinfo">
+              <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+              <div class="einfo"> 
+                  <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+                  <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                  <p class ="p2">Marques Brownlee</p>
+                  <p class="p3">3.1M views &#183 4 months ago</p> 
+                 </a></div>
+              
+          </div>
+           
+        </div>
+        <div class="window">
+            <div class="pic1">
+                        <img class="KAP" src ="th1.webp"> </div>
+                        
+                <div class="videoinfo">
+                            <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+                            <div class="einfo"> 
+                                <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+                                <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class ="p2">Marques Brownlee</p>
+                                <p class="p3">3.1M views &#183 4 months ago</p> 
+                               </a></div>
+                            
+                        </div>
+        
+        </div>
+
+        <div class="window">
+            <div class="pic1">
+                        <img class="KAP" src ="th1.webp"> </div>
+                        
+                <div class="videoinfo">
+                            <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+                            <div class="einfo"> 
+                                <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+                                <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class ="p2">Marques Brownlee</p>
+                                <p class="p3">3.1M views &#183 4 months ago</p> 
+                               </a></div>
+                            
+                        </div>
+        
+        </div>
+        
+        <div class="window">
+            <div class="pic1">
+                        <img class="KAP" src ="th1.webp"> </div>
+                        
+                <div class="videoinfo">
+                            <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+                            <div class="einfo"> 
+                                <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+                                <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class ="p2">Marques Brownlee</p>
+                                <p class="p3">3.1M views &#183 4 months ago</p> 
+                               </a></div>
+                            
+                        </div>
+        
+        </div>
+        <div class="window">
+            <div class="pic1">
+                        <img class="KAP" src ="th1.webp"> </div>
+                        
+                <div class="videoinfo">
+                            <div class ="dp"> <img class="god" src="dp1.jpeg"></div>
+                            <div class="einfo"> 
+                                <a class="fff" href="https://www.youtube.com/watch?v=n2RNcPRtAiY">  
+                                <p class="p1">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                                <p class ="p2">Marques Brownlee</p>
+                                <p class="p3">3.1M views &#183 4 months ago</p> 
+                               </a></div>
+                            
+                        </div>
+        
+        </div>
+
+        
+        
+        
+
+
+           
+                       
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    
+</div>
+</body>
+</html>

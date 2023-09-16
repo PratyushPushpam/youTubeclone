@@ -1,0 +1,64 @@
+input{
+    display: block;
+    border: 1.5px solid grey;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    /* ?align-items: 800px; */
+    margin: 0 auto;
+}
+.KAP{
+    width: 300px;
+    margin-left: 0px;
+    
+}
+.p1{
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+    color: black;
+    /* width: 300px; */
+    /* margin-left:20px; */
+    /* margin-right: 5px; */
+    /* margin-right:20px; */
+}
+.p2{
+    font-family: Roboto, Arial, sans-serif;
+    /* font-weight: bold; */
+    color: grey;
+    /* width: 300px; */
+    /* margin-left:20px; */
+    font-size: 14px;
+
+}
+
+.p3{
+    font-family: Roboto, Arial, sans-serif;
+    /* font-weight: bold; */
+    color: grey;
+    /* width: 300px; */
+    /* margin-left: 20px; */
+    font-size: 14px;
+}
+.window{
+    width: 300px;
+    display: inline-block;
+     border: 1px solid red; 
+    margin-right: 15px;
+    
+}
+.dp{
+    display: inline-block;
+    /* width: 50px; */
+    border: 2px solid black; 
+}
+.einfo{
+    display: inline-block ;
+    border: 1px soild red;
+}
+.god{
+    width:36px;
+}
+.pic1{
+    display: inline;
+}
+
